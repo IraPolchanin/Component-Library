@@ -1,0 +1,42 @@
+.App {
+  padding: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &-img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  &__instruction {
+    margin-bottom: 30px;
+    line-height: 3rem;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-bottom: 80px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__button:hover {
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+  }
+  
+  &__button:active {
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+  }
+}

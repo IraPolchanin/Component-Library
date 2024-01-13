@@ -1,0 +1,63 @@
+.TestimonialWithoutImage {
+  padding: 96px 71px 112px;
+  background-image: url(../../../public/assets/Path.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+  @include onMobile {
+    padding: 74px 16px;
+    background-position: -10% 150%;
+  }
+
+  &__logo-container {
+    width: 180px;
+    height: 32px;
+    margin: 0 auto 40px;
+  }
+
+  &__logo {
+    object-fit: contain;
+    height: 100%;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 150%;
+
+    @include onMobile {
+      text-align: start;
+    }
+  }
+
+  &__person {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 150%;
+
+    @include onMobile {
+      display: block;
+      text-align: start;
+    }
+
+    &-job {
+      color: #6B7280;
+
+      @include onMobile {
+        display: block;
+        text-align: start;
+      }
+    }
+  }
+
+  &__divider {
+    color: #2E59F3;
+
+    @include onMobile {
+      display: none;
+    }
+  }
+}

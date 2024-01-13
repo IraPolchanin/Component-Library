@@ -1,0 +1,48 @@
+@import "./vars";
+
+
+%h1 {
+  margin: 0 0 60px;
+  color: #000;
+  font-family: $font-heading;
+  font-size: 6rem;
+  line-height: 150%;
+
+  @include onMobile{
+  font-size: 4rem;
+  }
+}
+
+%h2 {
+  margin: 0 0 60px;
+  color: #000;
+  font-family: $font-heading;
+  font-size: 4.4rem;
+  line-height: 142.857%;
+  text-align: center;
+  @include onMobile{
+  font-size: 3rem;
+  }
+}
+
+%h3 {
+  margin: 0;
+  color: #5E5D5D;
+  font-family: $font-heading;
+  font-size: 2rem;
+  line-height: 80%;
+}
+
+%h4 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 155.6%;
+}
+
+%h5 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 142.857%;
+}

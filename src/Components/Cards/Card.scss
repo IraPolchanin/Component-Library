@@ -1,0 +1,53 @@
+.CardsList {
+  &__container {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 2 384px;
+  padding: 0px 24px 32px 24px;
+  border-radius: 8px;
+  background: $color-light-main;
+  transition: all $transition;
+
+  &:hover {
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.10);
+    transform: scale(1.01);
+  }
+
+  &>img {
+    object-fit: contain;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    color: #6B7280;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 150%;
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    display: flex;
+    transform: translateY(-50%);
+
+    &>svg {
+      margin: auto;
+      width: 50%;
+      height: 50%;
+    }
+  }
+}
